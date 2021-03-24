@@ -1,11 +1,9 @@
 ﻿using MassTransit;
 using MassTransit.ExtensionsDependencyInjectionIntegration;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Walthamstow.MassTransit.Platform.FunctionApp.Startup
+namespace Walthamstow.MassTransit.Platform.FunctionApp.Setup.Interfaces
 {
     /// <summary>
     /// Implemented by a class used to startup up the MassTransit platform
@@ -29,7 +27,7 @@ namespace Walthamstow.MassTransit.Platform.FunctionApp.Startup
         void ConfigureBus<TEndpointConfigurator>(IBusFactoryConfigurator<TEndpointConfigurator> configurator, IBusRegistrationContext context)
             where TEndpointConfigurator : IReceiveEndpointConfigurator;
 
-        void Configure(IApplicationBuilder app, IWebHostEnvironment env);
+        // void Configure(IApplicationBuilder app, IWebHostEnvironment env);
         
     }
 }

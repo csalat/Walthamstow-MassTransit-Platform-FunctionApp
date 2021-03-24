@@ -1,8 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Walthamstow.MassTransit.Platform.FunctionApp.SagaConfig;
 
-namespace Walthamstow.MassTransit.Platform.FunctionApp.Startup
+namespace Walthamstow.MassTransit.Platform.FunctionApp.Configurations
 {
     public static class SagaDbConfigurator
     {

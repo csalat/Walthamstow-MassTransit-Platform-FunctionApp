@@ -1,4 +1,4 @@
-﻿namespace Walthamstow.MassTransit.Platform.FunctionApp.SagaConfig
+﻿namespace Walthamstow.MassTransit.Platform.FunctionApp.Configurations
 {
     public class SqlServerDbConfigOptions
     {

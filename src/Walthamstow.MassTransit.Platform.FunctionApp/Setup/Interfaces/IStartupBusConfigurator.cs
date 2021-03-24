@@ -1,6 +1,6 @@
 ﻿using MassTransit;
 
-namespace Walthamstow.MassTransit.Platform.FunctionApp.Startup
+namespace Walthamstow.MassTransit.Platform.FunctionApp.Setup.Interfaces
 {
     public interface IStartupBusConfigurator
     {

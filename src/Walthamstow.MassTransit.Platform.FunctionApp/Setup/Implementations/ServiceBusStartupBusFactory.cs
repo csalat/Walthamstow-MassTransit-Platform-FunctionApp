@@ -4,9 +4,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using Serilog;
-using Walthamstow.MassTransit.Platform.FunctionApp.Transports.ServiceBus;
+using Walthamstow.MassTransit.Platform.FunctionApp.Setup.Interfaces;
+using Walthamstow.MassTransit.Platform.FunctionApp.Setup.ServiceBus;
 
-namespace Walthamstow.MassTransit.Platform.FunctionApp.Startup.ServiceBus
+namespace Walthamstow.MassTransit.Platform.FunctionApp.Setup.Implementations
 {
     public class ServiceBusStartupBusFactory :
         IStartupBusFactory
